@@ -3,8 +3,8 @@
 The Command Design Pattern is a behavioral design pattern that creates behavior of an Object(s) by delegating it to a separate class.
 
 ## Why would we want to use it?
-Let's suppose that we have a Turtle class, and all it can do is '''pointLeft()''', '''pointRight()''', '''pointUp()''', and '''pointDown()'''. This is the interface:
-'''
+Let's suppose that we have a Turtle class, and all it can do is ```pointLeft()```, ```pointRight()```, ```pointUp()```, and ```pointDown()```. This is the interface:
+```
 class Turtle {
     void pointLeft() {
         ...
@@ -19,10 +19,10 @@ class Turtle {
         ...
     }
 }
-'''
+```
 
 This interface comes with an controller, which serves as a way for the user to make commands to a Turtle: 
-'''
+```
 public class Controller {
     public void control(String command) {
         Turtle turtle = new Turtle();
@@ -37,13 +37,13 @@ public class Controller {
         }
     }
 }
-'''
+```
 
-Now let's say that we want to be able to make this Turtle point top-right. The easiest thing to do would be to add a new method to the interface called '''pointTopRight()'''. We can do the same thing for top-left, bottom-left, etc. But this presents a problem.
+Now let's say that we want to be able to make this Turtle point top-right. The easiest thing to do would be to add a new method to the interface called ```pointTopRight()```. We can do the same thing for top-left, bottom-left, etc. But this presents a problem.
 
 If we do this, we make the Turtle class very long and un-wieldy to manage in the long run: 
 
-'''
+```
 class Turtle {
     void pointLeft() {
         ...
@@ -68,20 +68,20 @@ class Turtle {
     ...
     // Imagine if we have this one class with a thousand methods, that's not really easy to manage for hudnereds of developers
 }
-'''
+```
 
 ## How would we use the Command pattern to solve this?
 In order to fix this, we just employ the paradigm of the Command pattern.
 
 The first step is to create a TurtleCommand interface, which basically serves as a way to "encapsulate" a command that a turtle will execute:
-'''
+```
 interface TurtleCommand {
     void execute(Turtle turtle);
 }
-'''
+```
 
 And then we just create classes that encapsulate commands of a Turtle:
-'''
+```
 // point right
 class PointRight implements TurtleCommand {
     void execute(Turtle turtle) {
@@ -117,10 +117,10 @@ class PointTopRight implements TurtleCommand {
         turtle.pointUp();
     }
 }
-'''
+```
 
 Now these classes can be used in the controller:
-'''
+```
 public class Controller {
     public void control(String command) {
         Turtle turtle = new Turtle();
@@ -144,7 +144,7 @@ public class Controller {
         command.execute(turtle);
     }
 }
-'''
+```
 
 ## What have we accomplished?
 By using the Command Patten, we have made the entire Turtle codebase more flexible and easy to manage. The way we did this was that instead of having all of our code in just two classes (The Turtle class and the Controller class), we now have all of our code in multiple different classes (The Turtle class, the Controller class, the PointRight class, the PointLeft class etc.), which makes it easier to manage for developers as each of these classes represents one "command".
