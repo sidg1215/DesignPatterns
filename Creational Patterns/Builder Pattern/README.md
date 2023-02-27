@@ -3,7 +3,7 @@
 The Builder pattern is used to delegate the creation and modification of an object to a separate class.
 ## Why would we want to use it?
 Suppose we have a Computer class as such:
-```
+```java
 public class Computer {
     private String motherboard;
     private String processor;
@@ -34,9 +34,9 @@ public class Computer {
     ... <more setters potentially> ...
 }
 
-```
+```java
 If a Computer object needs to be created, this is how it will be done:
-```
+```java
 Computer comp = new Computer();
 comp.setMotherboard("Intel");
 comp.setProcessor("Intel");
@@ -44,14 +44,14 @@ comp.setMemory("8 GB");
 comp.setGraphicsCard("NVIDIA");
 comp.setStorage("512 GB");
 ... <more calls to setters potentially> ...
-```
+```java
  Notice how just to create and modify one object, several lines of code have to be used and as such, it makes the code look long and unwieldy. Imagine if this class had a thousand fields and thus required thousands of setters to be used.
 
 ## How would we use the Builder pattern to solve this?
 The Builder pattern uses the idea of "chaining" method calls together in order to make it easier to modify the state of a class. Not only that, by utilizing the Builder pattern, custom constructors do not have to be created, which is a very powerful side-effect of the pattern.
 
 To see this, lets create a Computer class with a Builder class:
-```
+```java
 class Computer {
     private final String motherboard;
     private final String processor;
@@ -105,13 +105,13 @@ class Computer {
     }
 }
 
-```
+```java
 
 With this Builder class, we now have a more robust way of creating Computer objects, as such:
-```
+```java
 Computer comp = new Builder().comp.motherboard("Intel").processor("Intel").memory("8 GB").graphicsCard("NVIDIA").storage("512 GB").build();
-```
-Compared to the long list of ```set(Property)``` calls that had to be made in the previous, bad implementation, this way of creating Computer objects is a lot cleaner and easier to use.
+```java
+Compared to the long list of ```javaset(Property)```java calls that had to be made in the previous, bad implementation, this way of creating Computer objects is a lot cleaner and easier to use.
 
 ## What have we accomplished?
 Although what has been accomplished is mainly an aesthetic change in the code, by employing the Builder pattern, you essentially make a way for yourself and other developers using your code to construct objects in many different ways, and also make it easier for developers to construct them, which in the long run, allows for code to be written and integrated faster into the codebase.

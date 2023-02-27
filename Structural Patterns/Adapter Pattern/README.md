@@ -3,7 +3,7 @@
 The Adapter pattern allows a developer to use use integerate that has been produced by someone else or another third-party application into their own codebase, without modifying the other developers code.
 ## Why would we want to use it?
 Suppose that we are desigining a car race. For this, we will need a way to represent cars in our system. This can be done using the following:
-```
+```java
 interface Car {
     void drive();
 }
@@ -24,9 +24,9 @@ public class RaceTrack {
         }
     }
 }
-```
-As we are designing the car race, we realize we want to include electric cars. Unfortunately, creating an ```ElectricCar``` class on our own is way too much effort, and so we decided to use the an ```ElectricCar``` definition of another developer.
-```
+```java
+As we are designing the car race, we realize we want to include electric cars. Unfortunately, creating an ```javaElectricCar```java class on our own is way too much effort, and so we decided to use the an ```javaElectricCar```java definition of another developer.
+```java
 public class RaceTrack {
     public void startRace() {
         List<Car> allCars
@@ -39,11 +39,11 @@ public class RaceTrack {
         }
     }
 }
-```
-This is where we run into a problem: we are not allowed to change the other developer's ```ElectricCar``` implementation, so how do we use it in our codebase?
+```java
+This is where we run into a problem: we are not allowed to change the other developer's ```javaElectricCar```java implementation, so how do we use it in our codebase?
 ## How would we use the Adapter pattern to solve this?
-We can simply use the Adapter pattern to create an "adapter" around the other developer's ```ElectricCar``` class as such:
-```
+We can simply use the Adapter pattern to create an "adapter" around the other developer's ```javaElectricCar```java class as such:
+```java
 public class OurElectricCar implements Car {
     ElectricCar otherDeveloperElectricCar;
     public OurElectricCar(ElectricCar otherDeveloperElectricCar) {
@@ -67,6 +67,6 @@ public class RaceTrack {
         }
     }
 }
-```
+```java
 ## What have we accomplished?
 By using the Adapter pattern, we are saved the headache of not being able to use code from other different codebases that have different implementations. This allows faster production as developers do not have to reinvent the wheel every time an addition to the codebase needs to be made.
