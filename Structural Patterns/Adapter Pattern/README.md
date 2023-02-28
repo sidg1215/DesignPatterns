@@ -3,7 +3,7 @@
 The Adapter pattern allows a developer to use use integerate that has been produced by someone else or another third-party application into their own codebase, without modifying the other developers code.
 ## Why would we want to use it?
 Suppose that we are desigining a car race. For this, we will need a way to represent cars in our system. This can be done using the following:
-```
+```java
 interface Car {
     void drive();
 }
@@ -43,7 +43,7 @@ public class RaceTrack {
 This is where we run into a problem: we are not allowed to change the other developer's ```ElectricCar``` implementation, so how do we use it in our codebase?
 ## How would we use the Adapter pattern to solve this?
 We can simply use the Adapter pattern to create an "adapter" around the other developer's ```ElectricCar``` class as such:
-```
+```java
 public class OurElectricCar implements Car {
     ElectricCar otherDeveloperElectricCar;
     public OurElectricCar(ElectricCar otherDeveloperElectricCar) {

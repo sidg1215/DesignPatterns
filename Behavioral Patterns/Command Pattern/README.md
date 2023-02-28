@@ -4,7 +4,7 @@ The Command Design Pattern is a behavioral design pattern that creates behavior 
 
 ## Why would we want to use it?
 Let's suppose that we have a Turtle class, and all it can do is ```pointLeft()```, ```pointRight()```, ```pointUp()```, and ```pointDown()```. This is the interface:
-```
+```java
 class Turtle {
     void pointLeft() {
         ...
@@ -74,14 +74,14 @@ class Turtle {
 In order to fix this, we just employ the paradigm of the Command pattern.
 
 The first step is to create a TurtleCommand interface, which basically serves as a way to "encapsulate" a command that a turtle will execute:
-```
+```java
 interface TurtleCommand {
     void execute(Turtle turtle);
 }
 ```
 
 And then we just create classes that encapsulate commands of a Turtle:
-```
+```java
 // point right
 class PointRight implements TurtleCommand {
     void execute(Turtle turtle) {
@@ -120,7 +120,7 @@ class PointTopRight implements TurtleCommand {
 ```
 
 Now these classes can be used in the controller:
-```
+```java
 public class Controller {
     public void control(String command) {
         Turtle turtle = new Turtle();

@@ -3,7 +3,7 @@
 The Singleton Pattern restricts a class from being instantiated more than once, which although seems strange, does have very important applications.
 ## Why would we want to use it?
 Suppose that we are designing a database-client system, such that clients connect to one singular database. This can be prototyped with the following code:
-```
+```java
 public class Database {
     private String username;
     private String password;
@@ -36,7 +36,7 @@ public class Client {
 ```
 
 Let's say now another client (different class) wants to connect to the database:
-```
+```java
 ...
 public class Client2 {
     public void processData(String data) {

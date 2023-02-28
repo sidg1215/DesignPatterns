@@ -79,7 +79,7 @@ Since Java is being used, some of the built-in tools and interfaces of the langu
 All collections in Java (Including the List and Set interfaces) come with an ```iterator``` method, which returns an ```Iterator``` object. The ```Iterator``` interface has two methods: ```next``` and ```hasNext```. ```next``` gets the next item in a collection and ```hasNext``` checks to see if the collection has anymore items.
 
 Using this ```Iterator``` pattern, the code above can be refactored as such:
-```
+```java
 class NumberAdder {
     public int sum(Iterator<Integer> numbersIterator) {
         int sum = 0;
