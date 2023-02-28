@@ -6,8 +6,7 @@ The Iterator pattern is a design pattern that abstracts away the behavior of ite
 Iteration is an important part in all codebases. In a high-level point of view, it is the process of going through items in a data structure. Iteration can be performed on many structures, such as arrays, sets, trees, maps etc.
 
 As a toy example, let's say we wanted to add all the numbers in a list:
-
-```
+```java
 class NumberAdder {
     public int sum(List<Integer> numbers) {
         int sum = 0;
@@ -32,8 +31,7 @@ class NumberPrinterExecutor {
 ```
 
 Now what if we wanted to add a set of numbers? Of course, a Set<Integer> and List<Integer> are two different types, so we would have to create a new sum method in our NumberAdder class that takes in a Set<Integer>:
-
-```
+```java
 class NumberAdder {
     public int sum(List<Integer> numbers) {
         int sum = 0;

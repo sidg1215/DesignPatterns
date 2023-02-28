@@ -55,8 +55,7 @@ This is strange. This database has already been created and a connection has bee
 The Singleton pattern prevents the creation of multiple objects of the same class, which allows for a "global" variable in object oriented programming. Although the use of global variables is frowned upon in OOP (Object Oriented Programming), it should be used sparingly as it has very powerful applications.
 
 Applying the Singleton Pattern does not require too many changes:
-
-```
+```java
 public class Database {
     private static Database instance = null;
     private String username;
