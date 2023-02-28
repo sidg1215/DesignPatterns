@@ -22,7 +22,7 @@ class Turtle {
 ```
 
 This interface comes with an controller, which serves as a way for the user to make commands to a Turtle: 
-```
+```java
 public class Controller {
     public void control(String command) {
         Turtle turtle = new Turtle();
@@ -42,8 +42,7 @@ public class Controller {
 Now let's say that we want to be able to make this Turtle point top-right. The easiest thing to do would be to add a new method to the interface called ```pointTopRight()```. We can do the same thing for top-left, bottom-left, etc. But this presents a problem.
 
 If we do this, we make the Turtle class very long and un-wieldy to manage in the long run: 
-
-```
+```java
 class Turtle {
     void pointLeft() {
         ...
