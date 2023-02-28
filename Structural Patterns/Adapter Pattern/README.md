@@ -26,7 +26,7 @@ public class RaceTrack {
 }
 ```
 As we are designing the car race, we realize we want to include electric cars. Unfortunately, creating an ```ElectricCar``` class on our own is way too much effort, and so we decided to use the an ```ElectricCar``` definition of another developer.
-```
+```java
 public class RaceTrack {
     public void startRace() {
         List<Car> allCars
