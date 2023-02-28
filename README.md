@@ -1,3 +1,4 @@
+# LOOK HERE FIRST!
 # Design Patterns Guide: Get rid of your "smelly" code for good!
 
 This guide is for anyone who wants to know of different techniques to refactor their codebase, and it has been divided into three separate sections. You may check out them based on your own needs.
