@@ -5,5 +5,5 @@ When developers are trying to add more "behavior" (adding addional features, a n
 Luckily, there is a way to get around this problem. Behavioral design patterns can be used when adding more behavior to a codebase, and it will also make the process of adding more features to the codebase in the future much more easier and intuitive.
 
 These are two common behavioral design patterns:
-* [Command Design Pattern](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Patterns/Command%20Pattern) : Use this desgin pattern to make adding "Commands" to your application more flexible.
-* [Iterator Design Pattern](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Patterns/Iterator%20Pattern) : Use this design pattern to iterate over different types of data structures.
+* [Command Design Pattern](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern) : Use this desgin pattern to make adding "Commands" to your application more flexible.
+* [Iterator Design Pattern](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Iterator%20Design%20Pattern) : Use this design pattern to iterate over different types of data structures.
