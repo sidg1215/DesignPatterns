@@ -1,5 +1,5 @@
-# Command Pattern
-## What is the Command Design Pattern?
+# Command design pattern
+## What is the Command design pattern?
 The Command design pattern is a behavioral design pattern that creates behavior of an Object(s) by delegating it to a separate class.
 
 ## Why would we want to use it?

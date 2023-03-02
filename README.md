@@ -1,5 +1,4 @@
-# LOOK HERE FIRST!
-# Design Patterns Guide: Get rid of your "smelly" code for good!
+# The Design Pattern Guide
 
 This guide is for anyone who wants to make their codebase more extensible and useable. It has been divided into three separate sections. You may check out them based on your own needs.
 
