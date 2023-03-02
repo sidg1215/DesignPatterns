@@ -1,6 +1,6 @@
 # Singleton design pattern
 * [What is the Singleton design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#what-is-the-singleton-design-pattern)
-* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#why-would-we-want-to-use-this-design-pattern)
 * [How can we use the Singleton design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#how-can-we-use-the-singleton-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Singleton design pattern?

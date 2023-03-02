@@ -1,6 +1,6 @@
 # Bridge design pattern
 * [What is the Bridge design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#what-is-the-bridge-design-pattern)
-* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#why-would-we-want-to-use-this-design-pattern)
 * [How can we use the Bridge design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#how-can-we-use-the-bridge-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Bridge design pattern?

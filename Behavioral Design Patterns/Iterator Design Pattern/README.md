@@ -1,6 +1,6 @@
 # Iterator design pattern
 * [What is the Iterator design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Iterator%20Design%20Pattern#what-is-the-iterator-design-pattern)
-* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Iterator%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Iterator%20Design%20Pattern#why-would-we-want-to-use-this-design-pattern)
 * [How can we use the Iterator design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Iterator%20Design%20Pattern#how-can-we-use-the-iterator-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Iterator%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Iterator design pattern?

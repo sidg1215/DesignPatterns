@@ -1,7 +1,7 @@
 # Command design pattern
 
 * [What is the Command design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#what-is-the-command-design-pattern)
-* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#why-would-we-want-to-use-this-design-pattern)
 * [How can we use the Command design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#how-can-we-use-the-command-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Command design pattern?
