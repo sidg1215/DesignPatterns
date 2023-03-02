@@ -45,7 +45,7 @@ comp.setGraphicsCard("NVIDIA");
 comp.setStorage("512 GB");
 ... <more calls to setters potentially> ...
 ```
- Notice how just to create and modify one object, several lines of code have to be used and as such, it makes the code look long and unwieldy. Imagine if this class had a thousand fields and thus required thousands of setters to be used.
+Notice how just to create and modify one object, several lines of code have to be used and as such, it makes the code look long and unwieldy, which in the long run is poor practice because it makes it harder for multiple developers to work on the same file together. Not only that, a larger concern to point out is that because object creation and modification can take up thousands of lines of code in the class itself, that makes the class definition long and unwieldy as well. If another developer simply wants to just use the behavior (features and functions) of the ```Computer``` class rather than its setters, we need some way to separate the creation and modification of the class from its behaviour.  
 
 ## How would we use the Builder design pattern to solve this?
 The Builder pattern uses the idea of "chaining" method calls together in order to make it easier to modify the state of a class. Not only that, by utilizing the Builder pattern, custom constructors do not have to be created, which is a very powerful side-effect of the pattern.
@@ -115,3 +115,5 @@ Compared to the long list of ```set{Property}``` calls that had to be made in th
 
 ## What have we accomplished?
 Although what has been accomplished is mainly an aesthetic change in the code, by employing the Builder design pattern, you essentially make a way for yourself and other developers using your code to construct objects in many different ways, and also make it easier for developers to construct them, which in the long run, allows for code to be written and integrated faster into the codebase.
+
+The builder design pattern is used by most if not all developers who are writing object-oriented code. Not only that, it is easy to integrate into an existing codebase and makes the creation and modification process of any class more extensible.
