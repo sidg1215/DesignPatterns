@@ -1,11 +1,11 @@
 # Singleton design pattern
 * [What is the Singleton design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#what-is-the-singleton-design-pattern)
-* [Why would we want to use it?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#why-would-we-want-to-use-it)
 * [How can we use the Singleton design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#how-can-we-use-the-singleton-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Creational%20Design%20Patterns/Singleton%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Singleton design pattern?
 The Singleton design pattern restricts a class from being instantiated more than once, which although seems strange, does have very important applications.
-## Why would we want to use it?
+## Why would we want to use this design pattern?
 Suppose that we are designing a database-client system, such that clients connect to one singular database. This can be prototyped with the following code:
 ```java
 public class Database {

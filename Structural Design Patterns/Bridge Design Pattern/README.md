@@ -1,11 +1,11 @@
 # Bridge design pattern
 * [What is the Bridge design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#what-is-the-bridge-design-pattern)
-* [Why would we want to use it?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#why-would-we-want-to-use-it)
 * [How can we use the Bridge design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#how-can-we-use-the-bridge-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Bridge%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Bridge design pattern?
 The Bridge design pattern allows for the decoupling of a very large class hierarchy into individual class hierarchies.
-## Why would we want to use it?
+## Why would we want to use this design pattern?
 Imagine that we are trying to create a deli. The deli is going to have different sandwiches, which can be created as classes as such:
 ```java
 class WhiteBreadHam {

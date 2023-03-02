@@ -1,11 +1,11 @@
 # Adapter design pattern
 * [What is the Adapter design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Adapter%20Design%20Pattern#what-is-the-adapter-design-pattern)
-* [Why would we want to use it?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Adapter%20Design%20Pattern#why-would-we-want-to-use-it)
+* [Why would we want to use this design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Adapter%20Design%20Pattern#why-would-we-want-to-use-it)
 * [How can we use the Adapter design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Adapter%20Design%20Pattern#how-can-we-use-the-adapter-design-pattern-to-solve-this-issue)
 * [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Structural%20Design%20Patterns/Adapter%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Adapter design pattern?
 The Adapter design pattern allows a developer to use use integerate that has been produced by someone else or another third-party application into their own codebase, without modifying the other developers code.
-## Why would we want to use it?
+## Why would we want to use this design pattern?
 Suppose that we are desigining a car race. For this, we will need a way to represent cars in our system. This can be done using the following:
 ```java
 interface Car {
