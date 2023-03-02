@@ -33,7 +33,7 @@ What if we wanted to add sour dough as one of our potential breads: this means t
 
 If we follow this structure, adding new ingredients will become a pain. In fact, as more breads and more meats are added, the number of sandwiches that will
 be created will grow at an exponential amount. This is very bad design and results in all sorts of loss in productivity, and thus our codebase is __not extensible__ in the long run.
-## How would we use the Bridge design pattern to solve this?
+## How can we use the Bridge design pattern to solve this issue?
 We notice that rather than simply creating the combinations, let's try and separate the bread type and meat type. This can be done as follows:
 ```java
 interface Bread {

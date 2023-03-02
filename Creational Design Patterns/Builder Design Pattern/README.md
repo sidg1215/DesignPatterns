@@ -49,7 +49,7 @@ comp.setStorage("512 GB");
 ### ***The issue***: 
 Notice how just to create and modify one object, several lines of code have to be used and as such, it makes the code look long and unwieldy, which in the long run is poor practice because it makes it harder for multiple developers to work on the same file together. Not only that, a larger concern to point out is that because object creation and modification can take up thousands of lines of code in the class itself, that makes the class definition long and unwieldy as well. This is __not extensible__ in the long run when more state is added to the class.
 
-## How would we use the Builder design pattern to solve this?
+## How can we use the Builder design pattern to solve this issue?
 The Builder design pattern uses the idea of "chaining" method calls together in order to make it easier to modify the state of a class. Not only that, by utilizing the Builder pattern, custom constructors do not have to be created, which is a very powerful side-effect of the pattern.
 
 To see this, lets create a ```Computer``` class with a Builder class:

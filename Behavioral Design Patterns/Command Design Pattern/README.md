@@ -1,4 +1,9 @@
 # Command design pattern
+
+* [What is the Command design pattern?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#what-is-the-command-design-pattern)
+* [Why would we want to use it?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#why-would-we-want-to-use-it)
+* [How can we use the Command design pattern to solve this issue?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#how-would-we-use-the-command-design-pattern-to-solve-this)
+* [What have we accomplished?](https://github.com/sidg1215/DesignPatterns/tree/main/Behavioral%20Design%20Patterns/Command%20Design%20Pattern#what-have-we-accomplished)
 ## What is the Command design pattern?
 The Command design pattern is a behavioral design pattern that creates behavior of an Object(s) by delegating it to a separate class.
 
@@ -71,7 +76,7 @@ class Turtle {
 }
 ```
 In short, if we keep things as is, our codebase is __not extensible or useable__ by other developers
-## How would we use the Command design pattern to solve this?
+## How can we use the Command design pattern to solve this issue?
 In order to fix this, we just employ the Command design pattern.
 
 The first step is to create a ```TurtleCommand``` interface, which basically serves as a way to "encapsulate" a command that a turtle will execute:

@@ -52,7 +52,7 @@ public class Client2 {
 ```
 ### ***The issue***: 
 This database has already been created and a connection has been initilalized. In the real-world, the cost of "re-estabilishing" a connection over and over again can be very expensive, both in terms of time and money. When a connection to, in this case, a database, has already been created, it must be preserved for the lifetime of the program! In short, in the long run, assuming money and time are of utmost concern, this code is __not useable__.
-## How would we use the Singleton design pattern to solve this?
+## How can we use the Singleton design pattern to solve this issue?
 The Singleton design pattern prevents the creation of multiple objects of the same class, which allows for a "global" variable in object oriented programming. Although the use of global variables is frowned upon in OOP (Object Oriented Programming), it should be used sparingly as it has very powerful applications.
 
 Applying the Singleton Pattern does not require too many changes:
