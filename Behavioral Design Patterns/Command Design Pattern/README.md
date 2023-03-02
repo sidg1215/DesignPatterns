@@ -41,6 +41,7 @@ public class Controller {
 
 Now let's say that we want to be able to make this Turtle point top-right. The easiest thing to do would be to add a new method to the interface called ```pointTopRight()```. We can do the same thing for top-left, bottom-left, etc. But this presents a problem.
 
+### ***The issue***: 
 If we keep adding more and more methods directly to the ```Turtle``` class, the class definition becomes very long and un-wieldy. In fact, if methods and behavior are added in this way at this rate, this class alone can be tens of thousands of lines long. This is bad practice, and it makes it much harder for multiple developers to work on adding more behavior to the Turtle class at the same time:
 
 ```java
@@ -69,7 +70,7 @@ class Turtle {
     // Imagine if we have this one class with a thousand methods, that's not really easy to manage for hundereds of developers
 }
 ```
-We need some way to make it easier to add more behavior to the ```Turtle``` class without making it a mess.
+In short, if we keep things as is, our codebase is __not extensible or useable__ by other developers
 ## How would we use the Command design pattern to solve this?
 In order to fix this, we just employ the Command design pattern.
 

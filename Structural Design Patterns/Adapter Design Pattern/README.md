@@ -40,7 +40,8 @@ public class RaceTrack {
     }
 }
 ```
-This is where we run into a problem: we are not allowed to change the other developer's ```ElectricCar``` implementation, so how do we use it in our codebase?
+### ***The issue***: 
+This is where we run into a problem: we are not allowed to change the other developer's ```ElectricCar``` implementation, so how do we use it in our codebase? If we keep things as is, our codebase is __not useable__ as we are not able to integrate code from other libraries.
 ## How would we use the Adapter design pattern to solve this?
 We can simply use the Adapter design pattern to create an "adapter" around the other developer's ```ElectricCar``` class as such:
 ```java

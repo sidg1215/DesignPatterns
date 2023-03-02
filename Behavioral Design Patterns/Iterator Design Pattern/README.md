@@ -70,7 +70,8 @@ class NumberPrinterExecutor {
     }
 }
 ```
-Notice, the only part that is different in the two ```sum``` methods is the way of iterating through its input. Of course, this is just a toy example, but in the real-world, this can result in thousands of lines of unnecessary code.
+### ***The issue***: 
+Notice, the only part that is different in the two ```sum``` methods is the way of iterating through its input. Of course, this is just a toy example, but in the real-world, this can result in thousands of lines of unnecessary code. This means that this codebase is __not extensible__ because it comes at the cost of adding unnecessary code.
 ## How would we use the Iterator design pattern to solve this?
 Since Java is being used, some of the built-in tools and interfaces of the language can be used in employing the Iterator design pattern in this example. The ```sum``` method has a simple goal: to calculate the sum of the items in the given structure. It does not care how the structure is implemented, and so it does not need to know how to iterate over the structure. All it needs to know is how to get the ```next``` item in a sturcture and if it ```hasNext``` item (structure has no more items).
 
