@@ -1,9 +1,9 @@
 # Command Pattern
-## What is the Command Pattern?
-The Command Design Pattern is a behavioral design pattern that creates behavior of an Object(s) by delegating it to a separate class.
+## What is the Command Design Pattern?
+The Command design pattern is a behavioral design pattern that creates behavior of an Object(s) by delegating it to a separate class.
 
 ## Why would we want to use it?
-Let's suppose that we have a Turtle class, and all it can do is ```pointLeft()```, ```pointRight()```, ```pointUp()```, and ```pointDown()```. This is the interface:
+Suppose we have a Turtle class, and all it can do is ```pointLeft()```, ```pointRight()```, ```pointUp()```, and ```pointDown()```. This is the class definition for Turtle:
 ```java
 class Turtle {
     void pointLeft() {
@@ -41,7 +41,7 @@ public class Controller {
 
 Now let's say that we want to be able to make this Turtle point top-right. The easiest thing to do would be to add a new method to the interface called ```pointTopRight()```. We can do the same thing for top-left, bottom-left, etc. But this presents a problem.
 
-If we do this, we make the Turtle class very long and un-wieldy to manage in the long run: 
+If we keep adding more and more methods directly to the ```Turtle``` class, the class definition becomes very long and un-wieldy. In fact, if methods and behavior are added in this way at this rate, this class alone can be tens of thousands of lines long. This is bad practice, and it makes it much harder for multiple developers to work on adding more behavior to the Turtle class at the same time:
 
 ```java
 class Turtle {
@@ -66,14 +66,14 @@ class Turtle {
     ...
     ...
     ...
-    // Imagine if we have this one class with a thousand methods, that's not really easy to manage for hudnereds of developers
+    // Imagine if we have this one class with a thousand methods, that's not really easy to manage for hundereds of developers
 }
 ```
+We need some way to make it easier to add more behavior to the ```Turtle``` class without making it a mess.
+## How would we use the Command design pattern to solve this?
+In order to fix this, we just employ the Command design pattern.
 
-## How would we use the Command pattern to solve this?
-In order to fix this, we just employ the paradigm of the Command pattern.
-
-The first step is to create a TurtleCommand interface, which basically serves as a way to "encapsulate" a command that a turtle will execute:
+The first step is to create a ```TurtleCommand``` interface, which basically serves as a way to "encapsulate" a command that a turtle will execute:
 ```java
 interface TurtleCommand {
     void execute(Turtle turtle);
@@ -113,8 +113,8 @@ class PointDown implements TurtleCommand {
 // point top-right
 class PointTopRight implements TurtleCommand {
     void execute(Turtle turtle) {
-        turtle.pointRight();
-        turtle.pointUp();
+        // this is the code to make the turtle point top right
+        ...
     }
 }
 ```
@@ -147,6 +147,6 @@ public class Controller {
 ```
 
 ## What have we accomplished?
-By using the Command Patten, we have made the entire Turtle codebase more flexible and easy to manage. The way we did this was that instead of having all of our code in just two classes (The Turtle class and the Controller class), we now have all of our code in multiple different classes (The Turtle class, the Controller class, the PointRight class, the PointLeft class etc.), which makes it easier to manage for developers as each of these classes represents one "command".
+By using the Command design pattern, we have made the entire Turtle codebase more flexible and easy to manage. The way we did this was that instead of having all of our code in just two classes (The Turtle class and the Controller class), we now have all of our code in different classes (The Turtle class, the Controller class, the PointRight class, the PointLeft class etc.). This makes it easier to manage for developers as each of these classes represents one "command" (or one behaviour, or one feature).
 
-The Command pattern is widely used in applications that require users to execute commands (hence the name), and altohugh it is one that is difficult to wrap around, it is oen of the most powerful design patterns in this guide.
+The Command desing pattern is widely used in many different applications, and altohugh it is one that is difficult to wrap around, it is oen of the most powerful design patterns in this guide.
